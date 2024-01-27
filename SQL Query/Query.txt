@@ -1,0 +1,20 @@
+CREATE DATABASE ForQuiz;
+USE ForQuiz;
+CREATE TABLE Questions(Question VARCHAR(150),
+					   Option_1 VARCHAR(50),
+                       Option_2 VARCHAR(50),
+                       Option_3 VARCHAR(50),
+                       Option_4 VARCHAR(50),
+                       Correct_option int);
+CREATE TABLE Registration(Serial_Number INT PRIMARY KEY AUTO_INCREMENT,
+						  Participant_Name VARCHAR(50),
+                          Participant_password VARCHAR(50));
+CREATE TABLE Score(Participant_Name VARCHAR(50),
+				   Total_Score INT);
+SHOW TABLES;
+SELECT * FROM Questions;
+TRUNCATE TABLE Questions;
+SELECT * FROM Registration; 
+TRUNCATE TABLE Registration;
+SELECT * FROM Score;
+TRUNCATE TABLE Score;
